@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <div class="form-wrapper">
+
+    <form action="#" id="form" method="post">
+
+      <label class="lable"> Фамилия
+        <input type="text" id="surname" name="surname" minlength="2" maxlength="20" required>
+      </label>
+      <label class="lable"> Имя
+        <input type="text" id="name" name="name" maxlength="20" required>
+      </label>
+      <label class="lable"> Отчетство (при наличии)
+        <input type="text" id="patronymic" maxlength="20" name="patronymic">
+      </label>
+      <label class="lable"> День рождения
+        <input type="date" id="birthday" min="1900-01-01" name="birthday" required>
+      </label>
+      <label class="lable"> Начало обучения (год)
+        <input type="number" id="stydyYear" min="2000" name="stydyYear" required>
+      </label> 
+      <div id="faculty_wrapper">
+        <label class="lable"> Факультет
+          <input type="button" id="faculty" value="Metallurgy" name="faculty">
+        </label>
+        <label class="lable">
+          <input type="button" class="variant" value="Phisical education">
+        </label>
+        <label class="lable">
+          <input type="button" class="variant" value="Acting">
+        </label>
+        <label class="lable">
+          <input type="button" class="variant" value="Metallurgy">
+        </label>
+        <label class="lable">
+          <input type="button" class="variant" value="Engineering">
+        </label>
+        <label class="lable">
+          <input type="button" class="variant" value="Flying">
+        </label>
+      </div>
+      <label class="label submit_label">
+        <input type="submit" id="submit" value="Зарегистрировать">
+      </label>
+
+    </form>
+  </div>
+
+  <div class="table-wrapper">
+
+    <span id="search_title">Найти</span>
+
+    <form action="#" id="search_form" method="post">
+
+      <label class="search_label"> Фамилия, Имя или Отчество
+        <input type="text" minlength="2" maxlength="14" id="search_text"  class="search_input">
+      </label>
+      <div id="faculty_search_wrapper">
+        <label class="search_label"> Факультет
+          <input type="button" id="search_faculty" value="Любой" class="search_input">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Любой">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Acting">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Metallurgy">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Engineering">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Flying">
+        </label>
+        <label class="search_label">
+          <input type="submit" class="search_faculty_variant" value="Phisical education">
+        </label>
+      </div>
+      <label class="search_label"> День рождения
+        <input type="date" min="1900-01-01" id="search_birthday" class="search_input">
+      </label>
+      <label class="search_label"> Начало обучения (год)
+        <input type="number" min="2000" id="search_stydyYear" class="search_input">
+      </label>
+      <input type="button" value="Сбросить" class="search_reset">
+
+    </form>
+
+    <div id="table_titles">
+      <button class="title_buttons">ФИО</button>
+      <button class="title_buttons">Факультет</button>
+      <button class="title_buttons">Дата рождения</button>
+      <button class="title_buttons">Годы обучения</button>
+    </div>
+
+    <div id="table_list"></div>
+
+  </div>
+</body>
+
+</html>
