@@ -312,6 +312,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.10);
   background-color: #fff;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: right;
 }
@@ -461,6 +462,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   width: 100%;
   padding: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   
   border-radius: 32px;
@@ -469,6 +471,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .main__methods__wrapper-left__about__description {
   max-width: 433px;
+  margin-bottom: 15px;
   color: var(--white);
   font-style: normal;
   font-weight: 700;
@@ -493,6 +496,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 .main__methods__wrapper-right__card {
   min-height: 295px;
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid var(--gray);
   border-radius: 32px;
   padding: 65px 60px;
@@ -701,6 +705,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .footer__form-wrapper__form__buttons-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: start;
 }
 
@@ -710,6 +715,8 @@ h1, h2, h3, h4, h5, h6, p, span {
   background: var(--beige);
   margin-right: 22px;
 }
+
+
 
 .footer__form-wrapper__form__label {
   display: inline-block;
@@ -956,7 +963,7 @@ h1, h2, h3, h4, h5, h6, p, span {
   }
 
   .main__hero__title {
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 16px;
   }
 
@@ -1014,6 +1021,10 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin-bottom: 25px;
   }
 
+  .main__stages__content-wrapper__inner__about-btn {
+    margin-bottom: 15px;
+  }
+
   .main__stages__content-wrapper__img {
     flex-basis: 100%;
     margin-bottom: 38px;
@@ -1054,6 +1065,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
   .footer__form-wrapper__form__buttons-wrapper__submit {
     padding: 19px 42px;
+    margin-bottom: 15px;
   }
 
   .footer__content-wrapper__list-info {
